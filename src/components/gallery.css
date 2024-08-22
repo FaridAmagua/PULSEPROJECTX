@@ -1,0 +1,10 @@
+
+
+.swiper-slide img {
+    width: 100%;
+    /* Asegura que la imagen ocupe el ancho completo del contenedor de la diapositiva */
+    height: auto;
+    /* Mantiene la relación de aspecto de la imagen */
+    object-fit: cover;
+    /* Ajusta la imagen para que cubra el contenedor sin perder la relación de aspecto */
+}
