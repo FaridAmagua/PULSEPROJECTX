@@ -32,7 +32,7 @@ const clubsData = [
   {
     title: "Fitz",
     description:
-      "Nuestro club mas exclusivo ,contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales.",
+      "Nuestro club mas exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales.",
     image: "src/imgs/card-fitz.gif",
     url1: "https://fitzclub.seetickets.com/search/all?BrowseOrder=Date",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
