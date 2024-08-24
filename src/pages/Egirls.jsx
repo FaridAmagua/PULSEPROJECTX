@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { Lineartext } from "../components/Lineartext";
+//imagenes
+import Imgfitz from "@/assets/card-fitz.gif";
+import Imgnazca from "@/assets/card-nazca.gif";
+import Imgohmyclub from "@/assets/card-ohmyclub.gif";
+import Imgshokomadrid from "@/assets/card-shoko-madrid.gif";
+import Imgmon from "@/assets/card-mon.gif";
+
 
 const clubsData = [
   {
     title: "OhMyClub",
     description:
       "¡Entradas gratuitas, cócteles y mesas con botella de cortesía casi todos los días de la semana! Envíanos un mensaje.",
-    image: "src/imgs/card-ohmyclub.gif",
+    image: Imgohmyclub,
     url1: "https://smdgroup.club/es/farid",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
     visible: true,
@@ -15,7 +22,7 @@ const clubsData = [
     title: "Nazca",
     description:
       "Botellas y entradas con copa todos los miércoles y domingos. Consulta los días disponibles en nuestra la web",
-    image: "src/imgs/card-nazca.gif",
+    image: Imgnazca,
     url1: "https://xceed.me/es/madrid/club/nazca-events-club",
     url2: "https://xceed.me/es/madrid/club/nazca-events-club",
     visible: true,
@@ -24,16 +31,15 @@ const clubsData = [
     title: "Shoko Madrid",
     description:
       "Obtén entradas gratuitas disponibles los miércoles, viernes y algunos domingos. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales.",
-    image: "src/imgs/card-shoko-madrid.gif",
+    image: Imgshokomadrid,
     url1: "https://shokomadrid.com/eventos/",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
     visible: true,
   },
   {
     title: "Fitz",
-    description:
-      "Nuestro club mas exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales.",
-    image: "src/imgs/card-fitz.gif",
+    description:"Nuestro club mas exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales.",
+    image: Imgfitz,
     url1: "https://fitzclub.seetickets.com/search/all?BrowseOrder=Date",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
     visible: true,

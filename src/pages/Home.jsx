@@ -5,6 +5,8 @@ import { Lineartext } from "../components/Lineartext";
 import { Gallery } from "../components/Gallery";
 import { Events } from "../components/Events";
 import { Link } from "react-router-dom";
+//imagenes
+//iconos
 
 export const Home = () => {
   // Crear una referencia para la sección de las tarjetas
@@ -28,7 +30,7 @@ export const Home = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col"> 
       <div className="min-h-screen flex flex-col text-white">
         <div className="mt-20 md:mt-20">
           <Lineartext />

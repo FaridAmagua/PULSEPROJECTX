@@ -1,9 +1,23 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay } from 'swiper/modules';
+// Usa el alias o la ruta relativa correcta
+// importa otras imágenes si es necesario
+import Imginstagram from "@/assets/instagram-home.png";
+//card
+import Imgcard1 from "@/assets/card1.jpg";
+import Imgcard2 from "@/assets/card2.jpg";
+import Imgcard3 from "@/assets/card3.jpg";
+import Imgcard4 from "@/assets/card4.jpg";
+import Imgcard5 from "@/assets/card5.jpg";
+import Imgcard6 from "@/assets/card6.jpg";
+import Imgcard7 from "@/assets/card7.jpg";
+import Imgcard8 from "@/assets/card8.jpg";
+
 
 
 export const Gallery = () => {
@@ -14,7 +28,7 @@ export const Gallery = () => {
           {/* Contenedor de la primera imagen */}
           <div className="w-10 h-10 flex-shrink-0">
             <img
-              src="src\imgs\instagram-home.png"
+              src={Imginstagram}
               alt="Instagram"
               className="w-full h-full object-cover rounded-full"
             />
@@ -27,13 +41,13 @@ export const Gallery = () => {
       </div>
       <div className="container__swiper">
         <Swiper
-        modules={[Autoplay]}
+          modules={[Autoplay]}
           spaceBetween={0} // Ajusta el espacio entre las diapositivas
           slidesPerView={6} // Número de diapositivas visibles a la vez
           pagination={{ clickable: true }}
           autoplay={{
-            delay:3000,
-            disableOnInteraction:false
+            delay: 3000,
+            disableOnInteraction: false,
           }}
           breakpoints={{
             320: {
@@ -63,60 +77,28 @@ export const Gallery = () => {
           }}
         >
           <SwiperSlide>
-            <img
-              src="src\imgs\PRUEBA1.jpg"
-              className="img-fluid rounded-top"
-              alt=""
-            />
+            <img src={Imgcard1} className="img-fluid rounded-top" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="src\imgs\PRUEBA2.jpg"
-              className="img-fluid rounded-top"
-              alt=""
-            />
+            <img src={Imgcard2} className="img-fluid rounded-top" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="src\imgs\PRUEBA3.jpg"
-              className="img-fluid rounded-top"
-              alt=""
-            />
+            <img src={Imgcard3} className="img-fluid rounded-top" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="src\imgs\PRUEBA4.jpg"
-              className="img-fluid rounded-top"
-              alt=""
-            />
+            <img src={Imgcard4} className="img-fluid rounded-top" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="src\imgs\PRUEBA5.jpg"
-              className="img-fluid rounded-top"
-              alt=""
-            />
+            <img src={Imgcard5} className="img-fluid rounded-top" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="src\imgs\PRUEBA6.jpg"
-              className="img-fluid rounded-top"
-              alt=""
-            />
+            <img src={Imgcard6} className="img-fluid rounded-top" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="src\imgs\PRUEBA7.jpg"
-              className="img-fluid rounded-top"
-              alt=""
-            />
+            <img src={Imgcard7} className="img-fluid rounded-top" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="src\imgs\PRUEBA8.jpg"
-              className="img-fluid rounded-top"
-              alt=""
-            />
+            <img src={Imgcard8} className="img-fluid rounded-top" alt="" />
           </SwiperSlide>
         </Swiper>
       </div>

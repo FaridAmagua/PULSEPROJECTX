@@ -1,5 +1,12 @@
 import React from "react";
 import "./card.css";
+//imagenes
+import Imgfitz from "@/assets/card-fitz.gif";
+import Imgnazca from "@/assets/card-nazca.gif";
+import Imgohmyclub from "@/assets/card-ohmyclub.gif";
+import Imgshokomadrid from "@/assets/card-shoko-madrid.gif";
+import Imgmon from "@/assets/card-mon.gif";
+
 
 const Card = () => {
   // Definir el diccionario de datos
@@ -8,16 +15,16 @@ const cardData = [
     title: "FITZ MADRID",
     description:
       "¡El club que está arrasando! Ven a disfrutar de conciertos con artistas internacionales que están en boca de todos.",
-    image: "src/imgs/card-fitz.gif",
+    image: Imgfitz, // Usa la variable de la imagen sin llaves adicionales
     code_dressed: "Arreglado",
-    url1: "https://fitzclub.seetickets.com/tour/fitz-club",
+    url1: "https://fitzclubmadrid.com/",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
   },
   {
     title: "OHMYCLUB",
     description:
       "Explora la vida nocturna de Madrid con un toque de elegancia. ¡Prepárate para fiestas y conciertos que te harán brillar!",
-    image: "src/imgs/card-ohmyclub.gif",
+    image: Imgohmyclub,
     code_dressed: "Elegante",
     url1: "https://smdgroup.club/es/farid",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
@@ -26,7 +33,7 @@ const cardData = [
     title: "SHOKO",
     description:
       "Para todos, con el mejor ambiente y actuaciones de los artistas más famosos del momento. Únete a la fiesta y vive la experiencia única.",
-    image: "src/imgs/card-shoko-madrid.gif",
+    image: Imgshokomadrid,
     code_dressed: "Casual",
     url1: "https://shokomadrid.com/eventos/",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
@@ -35,7 +42,7 @@ const cardData = [
     title: "MON",
     description:
       "La mejor música del momento y un ambiente universitario se fusionan para una fiesta inolvidable. ¡Vive la noche al máximo con nosotros!",
-    image: "src/imgs/card-mon.gif",
+    image: Imgmon,
     code_dressed: "Arreglado",
     url1: "https://www.fourvenues.com/es/roberson-farid-amagua-lema",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
@@ -44,7 +51,7 @@ const cardData = [
     title: "NAZCA",
     description:
       "El club para los jóvenes que buscan disfrutar de la mejor música latina y electrónica en un ambiente lleno de energía.",
-    image: "src/imgs/card-nazca.gif",
+    image: Imgnazca,
     code_dressed: "Arreglado",
     url1: "https://xceed.me/es/madrid/club/nazca-events-club",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
