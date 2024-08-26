@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import "./home.css";
-import Card from "../components/Card.jsx";
+import {Card} from "../components/Card.jsx";
 import { Lineartext } from "../components/Lineartext.jsx";
 import { Gallery } from "../components/Gallery.jsx";
 import { Events } from "../components/Events.jsx";

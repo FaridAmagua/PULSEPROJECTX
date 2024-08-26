@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 // import Contact from "./pages/Contact";
 import Egirls from "./pages/Egirls";
 import Collabs from './pages/Collabs';
-import Card from './components/Card';
 
 function App() {
 
