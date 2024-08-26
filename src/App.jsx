@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { BrowserRouter,Route,Routes} from 'react-router-dom';
 
 import Navbar from "./components/Navbar"
@@ -5,6 +6,7 @@ import Home from "./pages/Home";
 // import Contact from "./pages/Contact";
 import Egirls from "./pages/Egirls";
 import Collabs from './pages/Collabs';
+import Card from './components/Card';
 
 function App() {
 
