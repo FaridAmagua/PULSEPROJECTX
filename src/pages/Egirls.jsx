@@ -7,12 +7,11 @@ import Imgohmyclub from "@/assets/card-ohmyclub.gif";
 import Imgshokomadrid from "@/assets/card-shoko-madrid.gif";
 import Imgmon from "@/assets/card-mon.gif";
 
-
 const clubsData = [
   {
     title: "OhMyClub",
     description:
-      "¡Entradas gratuitas, cócteles y mesas con botella de cortesía casi todos los días de la semana! Envíanos un mensaje.",
+      "¡Entradas gratuitas, cócteles y mesas con botella de cortesía casi todos los días de la semana! Envíanos un mensaje",
     image: Imgohmyclub,
     url1: "https://smdgroup.club/es/farid",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
@@ -30,7 +29,7 @@ const clubsData = [
   {
     title: "Shoko Madrid",
     description:
-      "Obtén entradas gratuitas disponibles los miércoles, viernes y algunos domingos. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales.",
+      "Obtén entradas gratuitas disponibles los miércoles, viernes y algunos domingos. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos",
     image: Imgshokomadrid,
     url1: "https://shokomadrid.com/eventos/",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
@@ -38,7 +37,8 @@ const clubsData = [
   },
   {
     title: "Fitz",
-    description:"Nuestro club mas exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales.",
+    description:
+      "Nuestro club mas exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales",
     image: Imgfitz,
     url1: "https://fitzclub.seetickets.com/search/all?BrowseOrder=Date",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
@@ -54,30 +54,31 @@ export const Egirls = () => {
   };
 
   return (
-    <div className="pt-[5rem] bg-black text-white min-h-screen">
-      <div>
+    <div className="pt-[4rem] sm:pt-[5rem] md:pt-[4rem] lg:pt-4 bg-black text-white min-h-screen">
+      {/* <div>
         <Lineartext color1="text-[#ff0080]" />
-      </div>
+      </div> */}
+
       <div className="flex-grow flex items-top justify-center">
         <div className="w-full max-w-4xl py-10 px-6">
           <h1 className="text-4xl font-bold mb-4">
             Explora y Disfruta Sin Costo
           </h1>
           <p className="text-lg mb-6">
-            ¿Eres parte de un grupo de amigas que busca disfrutar de la noche al
-            máximo? ¡Estás en el lugar indicado! Aprovecha nuestras ventajas
-            exclusivas, como reservas y entradas gratuitas en los mejores clubs.
+            ¿Tienes un grupo de amigas listo para vivir una noche increíble?
+            ¡Estás en el lugar perfecto! Aprovecha nuestras ventajas exclusivas:
+            reservas y entradas gratuitas en los clubs más top de la ciudad.
           </p>
-          <h2 className="text-2xl font-semibold mb-4">
-            Clubs con entradas gratis para grupo de chicas o botellas de
-            invitación.
-          </h2>
+
           <p className="mb-6">
-            Puedes acceder o preguntarnos el día que quieras asistir. Aquí
-            encontrarás una lista de los clubs disponibles que te garantizan una
-            experiencia nocturna inolvidable.
+            Disfruta de una noche VIP con tu grupo de chicas, donde podrás
+            acceder a entradas gratis o incluso botellas de invitación en los
+            mejores locales. Solo elige el día en que quieres salir, y nosotros
+            nos encargamos del resto.
           </p>
-          <h2 className="text-2xl font-bold pb-4">ELIGE DONDE SALIR</h2>
+          <h2 className="text-2xl font-bold pb-4">
+            ¡Elige tu destino y prepárate para una noche inolvidable!
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {clubsData.map((club, index) => (
               <div

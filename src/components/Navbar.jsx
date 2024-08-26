@@ -7,6 +7,7 @@ export const Navbar = () => {
   const items = [
     { name: "INICIO", link: "/" },
     { name: "PULSEGIRLS", link: "/egirls" },
+    { name: "COLABORACIONES", link: "/collabs" },
     // { name: "CONTACTO", link: "/contact" },
   ];
   const [toggleNavbar, setToggleNavbar] = useState(false);

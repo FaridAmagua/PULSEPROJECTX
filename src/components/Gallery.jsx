@@ -23,22 +23,29 @@ import Imgcard8 from "@/assets/card8.jpg";
 export const Gallery = () => {
   return (
     <div className="main__container">
-      <div className="container__1 block ">
-        <div className="flex items-center space-x-4">
-          {/* Contenedor de la primera imagen */}
-          <div className="w-10 h-10 flex-shrink-0">
-            <img
-              src={Imginstagram}
-              alt="Instagram"
-              className="w-full h-full object-cover rounded-full"
-            />
-          </div>
-          {/* Contenedor de imagenes */}
-          <div className="flex-1">
-            <span className="text-lg font-semibold">PULSEMADRIDX</span>
+      <a
+        href="https://www.instagram.com/pulsemadridx/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="container__1 block">
+          <div className="flex items-center space-x-4">
+            {/* Contenedor de la primera imagen */}
+            <div className="w-10 h-10 flex-shrink-0">
+              <img
+                src={Imginstagram}
+                alt="Instagram"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
+            {/* Contenedor de imagenes */}
+            <div className="flex-1">
+              <span className="text-lg font-semibold">PULSEPROJECTX</span>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
+
       <div className="container__swiper">
         <Swiper
           modules={[Autoplay]}
