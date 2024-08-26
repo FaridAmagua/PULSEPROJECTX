@@ -1,10 +1,11 @@
 import React, { useState, useRef } from "react";
 import "./home.css";
-import {Card} from "../components/Card.jsx";
+
+import { Link } from "react-router-dom";
 import { Lineartext } from "../components/Lineartext.jsx";
 import { Gallery } from "../components/Gallery.jsx";
 import { Events } from "../components/Events.jsx";
-import { Link } from "react-router-dom";
+import { Card } from "../components/Card.jsx"
 //imagenes
 //iconos
 
