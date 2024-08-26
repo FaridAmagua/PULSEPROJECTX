@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
 import "./home.css";
-import Card from "../components/Card";
-import { Lineartext } from "../components/Lineartext";
-import { Gallery } from "../components/Gallery";
-import { Events } from "../components/Events";
+import Card from "../components/Card.jsx";
+import { Lineartext } from "../components/Lineartext.jsx";
+import { Gallery } from "../components/Gallery.jsx";
+import { Events } from "../components/Events.jsx";
 import { Link } from "react-router-dom";
 //imagenes
 //iconos
