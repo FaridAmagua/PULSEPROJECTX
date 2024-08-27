@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Lineartext } from "../components/Lineartext";
+import { EventLinearText } from "../components/EventLinearText";
 //imagenes
 import Imgfitz from "@/assets/card-fitz.gif";
 import Imgnazca from "@/assets/card-nazca.gif";
@@ -56,7 +56,7 @@ export const Egirls = () => {
   return (
     <div className="pt-[4rem] sm:pt-[5rem] md:pt-[4rem] lg:pt-4 bg-black text-white min-h-screen">
       {/* <div>
-        <Lineartext color1="text-[#ff0080]" />
+        <EventLinearText color1="text-[#ff0080]" />
       </div> */}
 
       <div className="flex-grow flex items-top justify-center">

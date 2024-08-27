@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useRef } from "react";
 import "./home.css";
-
-import Card from "../components/Card"
 import { Link } from "react-router-dom";
-import { Lineartext } from "../components/Lineartext";
+import { EventLinearText } from "../components/EventLinearText";
 import { Gallery } from "../components/Gallery";
 import { Events } from "../components/Events";
+import Cardhome from "../components/Cardhome.jsx";
+
 
 export const Home = () => {
   // Crear una referencia para la sección de las tarjetas
@@ -30,10 +30,10 @@ export const Home = () => {
   };
 
   return (
-    <div className="flex flex-col"> 
+    <div className="flex flex-col">
       <div className="min-h-screen flex flex-col text-white">
         <div className="mt-20 md:mt-20">
-          <Lineartext />
+          <EventLinearText />
         </div>
 
         {/* Contenedor principal que ocupa el espacio restante */}
@@ -78,7 +78,7 @@ export const Home = () => {
             Descubre nuestras fiestas
           </p>
           <div className="flex flex-col items-center">
-            <Card></Card>
+            <Cardhome/>
           </div>
         </div>
       </div>

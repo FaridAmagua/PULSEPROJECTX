@@ -8,7 +8,7 @@ import Imgohmyclub from "@/assets/card-ohmyclub.gif";
 import Imgshokomadrid from "@/assets/card-shoko-madrid.gif";
 import Imgmon from "@/assets/card-mon.gif";
 
-const Card = () => {
+const Cardhome = () => {
   // Definir el diccionario de datos
   const cardData = [
     {
@@ -118,4 +118,4 @@ const Card = () => {
     </div>
   );
 };
-export default Card;
+export default Cardhome;

@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unknown-property */
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 export const Contact = () => {
 
-  const[email, setEmail] = useState("");
+  // const[email, setEmail] = useState("");
   
   const handleSubmit = (e) => {
     e.preventDefault();

@@ -12,7 +12,10 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"), // Usar path.resolve para asegurar la ruta correcta
+      "@": path.resolve(__dirname, "src"),
+
+      // "@": path.resolve(__dirname, "src"),
+      // Usar path.resolve para asegurar la ruta correcta
     },
   },
 });

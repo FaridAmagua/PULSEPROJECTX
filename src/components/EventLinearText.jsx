@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Lineartext = ({ color1, color2 }) => {
+export const EventLinearText = ({ color1, color2 }) => {
   return (
     <div className="relative overflow-hidden whitespace-nowrap w-full">
       <div className="flex animate-scroll">
@@ -20,3 +20,4 @@ export const Lineartext = ({ color1, color2 }) => {
     </div>
   );
 };
+export default EventLinearText;
