@@ -1,13 +1,12 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useRef } from "react";
 import "./home.css";
 
+import Card from "../components/Card"
 import { Link } from "react-router-dom";
-import { Lineartext } from "../components/Lineartext.jsx";
-import { Gallery } from "../components/Gallery.jsx";
-import { Events } from "../components/Events.jsx";
-import { Card } from "../components/Card.jsx"
-//imagenes
-//iconos
+import { Lineartext } from "../components/Lineartext";
+import { Gallery } from "../components/Gallery";
+import { Events } from "../components/Events";
 
 export const Home = () => {
   // Crear una referencia para la sección de las tarjetas
@@ -79,7 +78,7 @@ export const Home = () => {
             Descubre nuestras fiestas
           </p>
           <div className="flex flex-col items-center">
-            <Card />
+            <Card></Card>
           </div>
         </div>
       </div>
