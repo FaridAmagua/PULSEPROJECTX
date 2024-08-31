@@ -1,7 +1,7 @@
 .animated-text {
     color: white;
     /* Color inicial */
-    animation: colorChange 4s infinite;
+    animation: colorChange 3.5s infinite;
     /* Nombre de la animación, duración de 3 segundos, repetición infinita */
 }
 
