@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import { EventLinearText } from "../components/EventLinearText";
+import "./egirls.css";
+
 //imagenes
 import Imgfitz from "@/assets/card-fitz.gif";
 import Imgnazca from "@/assets/card-nazca.gif";
 import Imgohmyclub from "@/assets/card-ohmyclub.gif";
 import Imgshokomadrid from "@/assets/card-shoko-madrid.gif";
-import Imgmon from "@/assets/card-mon.gif";
+// import Imgmon from "@/assets/card-mon.gif";
 
 const clubsData = [
   {
@@ -62,17 +64,18 @@ export const Egirls = () => {
       <div className="flex-grow flex items-top justify-center">
         <div className="w-full max-w-4xl py-10 px-6">
           <h1 className="text-4xl font-bold mb-4">
-            Explora y Disfruta Sin Costo
+            Disfruta Sin Costo
           </h1>
-          <p className="text-lg mb-6">
-            ¿Tienes un grupo de amigas listo para vivir una noche increíble?
-            ¡Estás en el lugar perfecto! Aprovecha nuestras ventajas exclusivas:
-            reservas y entradas gratuitas en los clubs más top de la ciudad.
+          <p className="text-lg mb-3">
+            ¿Sois un grupo de amigas? Descubre nuestras ventajas
+            exclusivas:&nbsp;
+            <span className="animated-text">
+              reservas y entradas gratuitas en los clubs más top de la ciudad.
+            </span>
           </p>
 
-          <p className="mb-6">
-            Disfruta de una noche VIP con tu grupo de chicas, donde podrás
-            acceder a entradas gratis o incluso botellas de invitación en los
+          <p className="mb-3">
+           Escríbenos para nuestras botellas de invitación en los
             mejores locales. Solo elige el día en que quieres salir, y nosotros
             nos encargamos del resto.
           </p>

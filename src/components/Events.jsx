@@ -4,7 +4,7 @@ import './events.css';
 export const Events = () => {
   return (
     <a
-      href="https://fitzclub.seetickets.com/event/fitz-x-tyga/fitz-club/3124283"
+      href="https://shokomadrid.com/event/puro-perreo-pirlo-2/"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -19,7 +19,7 @@ export const Events = () => {
         <div className="flex animate-scrollalert">
           {[...Array(8)].map((_, i) => (
             <span key={i} className="text-white text-3xl">
-              CONCIERTO DE TYGA 27 AGOSTO<span>&nbsp;</span>
+              CONCIERTO DE PIRLO 22 SEPTIEMRBRE<span>&nbsp;</span>
             </span>
           ))}
         </div>
