@@ -19,7 +19,7 @@ export const Events = () => {
         <div className="flex animate-scrollalert">
           {[...Array(8)].map((_, i) => (
             <span key={i} className="text-white text-3xl">
-              CONCIERTO DE LERICA SEPTIEMRBRE<span>&nbsp;</span>
+              CONCIERTO DE LERICA 5 SEPTIEMRBRE<span>&nbsp;</span>
             </span>
           ))}
         </div>
