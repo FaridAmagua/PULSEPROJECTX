@@ -17,7 +17,7 @@ export const Collabs = () => {
         oportunidades: botellas personalizadas, invitaciones VIP y servicios
         únicos diseñados solo para ti.
       </p>
-      {/* Botón de contacto */}ººº
+      {/* Botón de contacto */}
       <a
         href="https://wa.me/message/SG7R44Q336VZO1"
         className="bg-pink-500 text-white py-2 px-4 rounded hover:bg-red-600"
