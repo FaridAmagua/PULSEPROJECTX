@@ -63,7 +63,7 @@ export const Egirls = () => {
 
       <div className="flex-grow flex items-top justify-center">
         <div className="w-full max-w-4xl py-10 px-6">
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-4xl font-bold mb-4 text-[#de4c8a]">
             Disfruta Sin Costo
           </h1>
           <p className="text-lg mb-3">
@@ -75,14 +75,14 @@ export const Egirls = () => {
           </p>
 
           <p className="mb-3">
-           Escríbenos para nuestras botellas de invitación en los
-            mejores locales. Solo elige el día en que quieres salir, y nosotros
-            nos encargamos del resto.
+            Escríbenos para nuestras botellas de invitación en los mejores
+            locales. Solo elige el día en que quieres salir, y nosotros nos
+            encargamos del resto.
           </p>
-          <h2 className="text-2xl font-bold pb-4">
+          <h2 className="text-2xl font-bold pb-4 text-[#de4c8a]">
             ¡Elige tu destino y prepárate para una noche inolvidable!
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {clubsData.map((club, index) => (
               <div
                 key={index}

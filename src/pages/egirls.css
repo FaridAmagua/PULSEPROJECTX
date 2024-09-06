@@ -7,12 +7,12 @@
 
 @keyframes colorChange {
     0% {
-        color: pink;
+        color: pink;    
         /* Empieza en rosa */
     }
 
     100% {
-        color: rgb(236,83,160);
+        color:#de4c8a;
         /* Termina en blanco */
     }
 }

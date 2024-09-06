@@ -1,10 +1,11 @@
 import React from "react";
+import './collab.css'
 
 export const Collabs = () => {
   return (
     <div className="pt-[60px] bg-black text-white min-h-screen flex flex-col items-center justify-center text-center px-6">
       {/* Título */}
-      <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-wide">
+      <h1 id="style1" className="text-4xl md:text-5xl font-bold mb-6 tracking-wide font-['Inter']">
         ¡COLABORA CON NOSOTROS!
       </h1>
       {/* Texto descriptivo */}
@@ -20,7 +21,7 @@ export const Collabs = () => {
       {/* Botón de contacto */}
       <a
         href="https://wa.me/message/SG7R44Q336VZO1"
-        className="bg-pink-500 text-white py-2 px-4 rounded hover:bg-red-600"
+        className="bg-[#F5E401] text-black py-2 px-4 rounded hover:bg-white font-bold"
       >
         Contáctanos
       </a>
