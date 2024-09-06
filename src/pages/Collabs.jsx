@@ -1,5 +1,5 @@
 import React from "react";
-import './collab.css'
+import "./collab.css";
 
 export const Collabs = () => {
   return (
