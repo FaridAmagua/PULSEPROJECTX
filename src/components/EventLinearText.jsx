@@ -6,14 +6,14 @@ export const EventLinearText = ({ color1, color2 }) => {
       <div className="flex animate-scroll">
         {[...Array(8)].map((_, i) => (
           <span key={i} className={`text-4xl font-bold px-4 ${color1}`}>
-            PULSE PROJECT
+            PULSEPROJECT
           </span>
         ))}
       </div>
       <div className="flex animate-scroll-back">
         {[...Array(8)].map((_, i) => (
           <span key={i} className={`text-4xl font-bold px-4 ${color2}`}>
-            PULSE PROJECT
+            PROYECTOX
           </span>
         ))}
       </div>

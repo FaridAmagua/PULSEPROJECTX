@@ -24,7 +24,7 @@ export const Gallery = () => {
   return (
     <div className="main__container">
       <a
-        href="https://www.instagram.com/pulsemadridx/"
+        href="https://www.instagram.com/proyectoxmadrid/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -40,7 +40,8 @@ export const Gallery = () => {
             </div>
             {/* Contenedor de imagenes */}
             <div className="flex-1">
-              <span className="text-lg font-semibold">PULSEPROJECTX</span>
+              <span className="text-lg font-semibold">PULSEMADRIDX</span>
+              {/* <span className="text-lg font-semibold">PULSEPROJECTX</span> */}
             </div>
           </div>
         </div>

@@ -50,14 +50,24 @@ export const Home = () => {
                 onClick={handleButtonClick}
                 className="bg-blue-800 font-mono text-white py-2 px-4 rounded text-xl hover:bg-black hover:text-white transition duration-300"
               >
-                Clubs Recomendados
+                Clubs recomendados
               </button>
-              <button
+              <button className="bg-pink-500 font-mono text-white py-2 px-4 rounded text-xl hover:bg-pink-700 hover:text-white transition duration-300 ease-in-out">
+                <Link
+                  to="/egirls"
+                  className="flex items-center justify-center w-full h-full"
+                >
+                  Eventos PULSEGIRLS
+                </Link>
+              </button>
+
+              {/* <button
                 onClick={handleButtonClick}
                 className="bg-white font-mono text-black py-2 px-4 rounded text-xl hover:bg-black hover:text-white transition duration-300"
               >
                 {buttonText}
-              </button>
+              </button> */}
+              <button></button>
             </div>
           </div>
         </div>
@@ -78,7 +88,7 @@ export const Home = () => {
             Descubre nuestras fiestas
           </p>
           <div className="flex flex-col items-center">
-            <Cardhome/>
+            <Cardhome />
           </div>
         </div>
       </div>
@@ -122,9 +132,7 @@ export const Home = () => {
               <p className="text-gray-400 font-bold">
                 Email: pulseprojectx@gmail.com
               </p>
-              {/* <p className="text-gray-400 font-sans">
-                Teléfono: +34 123 456 789
-              </p> */}
+              <p className="text-gray-400 font-bold">Teléfono: +34 642408794</p>
               <div className="flex space-x-4 mt-4">
                 <a
                   href="#facebook"

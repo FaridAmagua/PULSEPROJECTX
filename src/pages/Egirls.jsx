@@ -3,13 +3,22 @@ import { EventLinearText } from "../components/EventLinearText";
 import "./egirls.css";
 
 //imagenes
-import Imgfitz from "@/assets/card-fitz.gif";
+import Imgfitz from "@/assets/card-fitz-chicas.gif";
 import Imgnazca from "@/assets/card-nazca.gif";
 import Imgohmyclub from "@/assets/card-ohmyclub.gif";
-import Imgshokomadrid from "@/assets/card-shoko-madrid.gif";
+import Imgshokomadrid from "@/assets/card-shoko-chicas.gif";
 // import Imgmon from "@/assets/card-mon.gif";
 
 const clubsData = [
+  {
+    title: "Fitz",
+    description:
+      "Nuestro club mas exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales",
+    image: Imgfitz,
+    url1: "https://fitzclub.seetickets.com/search/all?BrowseOrder=Date",
+    url2: "https://wa.me/message/SG7R44Q336VZO1",
+    visible: true,
+  },
   {
     title: "OhMyClub",
     description:
@@ -37,15 +46,6 @@ const clubsData = [
     url2: "https://wa.me/message/SG7R44Q336VZO1",
     visible: true,
   },
-  {
-    title: "Fitz",
-    description:
-      "Nuestro club mas exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales",
-    image: Imgfitz,
-    url1: "https://fitzclub.seetickets.com/search/all?BrowseOrder=Date",
-    url2: "https://wa.me/message/SG7R44Q336VZO1",
-    visible: true,
-  },
 ];
 
 export const Egirls = () => {
@@ -63,24 +63,26 @@ export const Egirls = () => {
 
       <div className="flex-grow flex items-top justify-center">
         <div className="w-full max-w-4xl py-10 px-6">
-          <h1 className="text-4xl font-bold mb-4 text-[#de4c8a]">
-            Disfruta Sin Costo
+          <h1 className="text-4xl font-bold mb-4 text-[#f11f77] text-center">
+            PULSEGIRLS EVENTS
           </h1>
           <p className="text-lg mb-3">
-            ¿Sois un grupo de amigas? Descubre nuestras ventajas
-            exclusivas:&nbsp;
+            ¿Sois un grupo de amigas listo para la próxima aventura? ¡Descubrid
+            nuestras ventajas exclusivas!&nbsp;
             <span className="animated-text">
-              reservas y entradas gratuitas en los clubs más top de la ciudad.
+              Botellas de invitación, entradas VIP para conciertos y acceso
+              gratuito a los clubs más exclusivos de la ciudad.
             </span>
           </p>
 
           <p className="mb-3">
-            Escríbenos para nuestras botellas de invitación en los mejores
-            locales. Solo elige el día en que quieres salir, y nosotros nos
-            encargamos del resto.
+            ¿Queréis disfrutar al máximo de la vida nocturna? ¡Escríbenos y te
+            informamos de todos los eventos disponibles! Restaurantes, bares,
+            fiestas, y mucho más... ¡Todo lo mejor, al alcance de tu mano!
           </p>
-          <h2 className="text-2xl font-bold pb-4 text-[#de4c8a]">
-            ¡Elige tu destino y prepárate para una noche inolvidable!
+
+          <h2 className="text-2xl font-bold pb-4 text-[#f11f77]">
+            ¡Elige tu club y prepárate para una noche inolvidable!
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {clubsData.map((club, index) => (
