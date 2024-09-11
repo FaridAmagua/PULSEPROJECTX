@@ -1,66 +1,66 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { EventLinearText } from "../components/EventLinearText";
 import "./egirls.css";
 
-//imagenes
 import Imgfitz from "@/assets/card-fitz-chicas.gif";
 import Imgnazca from "@/assets/card-nazca.gif";
 import Imgohmyclub from "@/assets/card-ohmyclub.gif";
 import Imgshokomadrid from "@/assets/card-shoko-chicas.gif";
-// import Imgmon from "@/assets/card-mon.gif";
 
 const clubsData = [
   {
     title: "Fitz",
     description:
-      "Nuestro club mas exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales",
+      "Nuestro club más exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales.",
     image: Imgfitz,
     url1: "https://fitzclub.seetickets.com/search/all?BrowseOrder=Date",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
-    visible: true,
   },
   {
     title: "OhMyClub",
     description:
-      "¡Entradas gratuitas, cócteles y mesas con botella de cortesía casi todos los días de la semana! Envíanos un mensaje",
+      "¡Entradas gratuitas, cócteles y mesas con botella de cortesía casi todos los días de la semana! Envíanos un mensaje.",
     image: Imgohmyclub,
     url1: "https://smdgroup.club/es/farid",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
-    visible: true,
   },
   {
     title: "Nazca",
     description:
-      "Botellas y entradas con copa todos los miércoles y domingos. Consulta los días disponibles en nuestra la web",
+      "Botellas y entradas con copa todos los miércoles y domingos. Consulta los días disponibles en nuestra web.",
     image: Imgnazca,
     url1: "https://xceed.me/es/madrid/club/nazca-events-club",
     url2: "https://xceed.me/es/madrid/club/nazca-events-club",
-    visible: true,
   },
   {
     title: "Shoko Madrid",
     description:
-      "Obtén entradas gratuitas disponibles los miércoles, viernes y algunos domingos.Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos",
+      "Obtén entradas gratuitas disponibles los miércoles, viernes y algunos domingos. Contáctanos para consultarnos en conciertos.",
     image: Imgshokomadrid,
     url1: "https://shokomadrid.com/eventos/",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
-    visible: true,
   },
 ];
 
 export const Egirls = () => {
   const [selectedCard, setSelectedCard] = useState(null);
+  const [showDetails, setShowDetails] = useState(false);
 
-  const handleCardClick = (index) => {
-    setSelectedCard(index === selectedCard ? null : index); // Toggle selection
+  useEffect(() => {
+    const timer = setTimeout(() => setShowDetails(true), 2500);
+    return () => clearTimeout(timer); // Cleanup timer
+  }, []);
+
+  const handleCardHover = (index) => {
+    setSelectedCard(index);
+  };
+
+  const handleCardLeave = () => {
+    setSelectedCard(null);
   };
 
   return (
     <div className="pt-[4rem] sm:pt-[5rem] md:pt-[4rem] lg:pt-4 bg-black text-white min-h-screen">
-      {/* <div>
-        <EventLinearText color1="text-[#ff0080]" />
-      </div> */}
-
       <div className="flex-grow flex items-top justify-center">
         <div className="w-full max-w-4xl py-10 px-6">
           <h1 className="text-4xl font-bold mb-4 text-[#f11f77] text-center">
@@ -88,25 +88,27 @@ export const Egirls = () => {
             {clubsData.map((club, index) => (
               <div
                 key={index}
-                onClick={() => handleCardClick(index)}
+                onMouseEnter={() => handleCardHover(index)}
+                onMouseLeave={handleCardLeave}
                 className={`relative overflow-hidden rounded-lg shadow-lg cursor-pointer transition-transform transform ${
-                  selectedCard === index ? "scale-105" : ""
+                  selectedCard === index || showDetails ? "scale-105" : ""
                 }`}
                 style={{ minHeight: "300px" }}
               >
-                {/* Imagen de fondo */}
                 <div
                   className={`absolute inset-0 bg-cover bg-center transition-transform duration-300 ease-in-out ${
-                    selectedCard === index ? "scale-110" : "scale-100"
+                    selectedCard === index || showDetails
+                      ? "scale-110"
+                      : "scale-100"
                   }`}
                   style={{ backgroundImage: `url(${club.image})`, zIndex: 0 }}
                 />
 
-                {/* Contenido de la tarjeta */}
-                {/* Contenido de la tarjeta */}
                 <div
                   className={`absolute inset-0 p-4 bg-black bg-opacity-70 transition-opacity duration-300 ease-in-out flex flex-col justify-between ${
-                    selectedCard === index ? "opacity-100 z-10" : "opacity-0"
+                    selectedCard === index || showDetails
+                      ? "opacity-100 z-10"
+                      : "opacity-0"
                   }`}
                 >
                   <div>
@@ -118,9 +120,9 @@ export const Egirls = () => {
                       href={club.url1}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold  px-1  py-2 rounded-sm flex items-center justify-center flex-grow"
+                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-1 py-2 rounded-sm flex items-center justify-center flex-grow"
                     >
-                      <span className=" text-[13px] ">Entradas</span>
+                      <span className="text-[13px]">Entradas</span>
                     </a>
                     <a
                       href={club.url2}
