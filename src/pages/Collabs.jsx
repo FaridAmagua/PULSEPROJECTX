@@ -21,7 +21,7 @@ export const Collabs = () => {
       {/* Botón de contacto */}
       <a
         href="https://wa.me/message/SG7R44Q336VZO1"
-        className="bg-[#F5E401] text-black py-2 px-4 rounded hover:bg-white font-bold"
+        className="bg-[#ffffff] text-black py-2 px-4 rounded hover:bg-slate-300 font-bold"
       >
         Contáctanos
       </a>

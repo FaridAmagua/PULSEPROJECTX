@@ -1,11 +1,11 @@
- #style1 {
-     /* Tamaño del texto */
+ /* #style1 {
+
      font-weight: bold;
-     /* margin-bottom: 1.5rem; */
+
      letter-spacing: 0.05em;
      font-family: 'Inter', sans-serif;
      color: transparent;
-     /* Hace que el relleno del texto sea transparente */
-     -webkit-text-stroke: 2px #F5E401;
-     /* Grosor y color del contorno del texto */
- }
+
+     -webkit-text-stroke: 2px #ffff;
+
+ } */

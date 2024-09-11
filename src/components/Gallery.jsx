@@ -24,7 +24,7 @@ export const Gallery = () => {
   return (
     <div className="main__container">
       <a
-        href="https://www.instagram.com/proyectoxmadrid/"
+        href="https://www.instagram.com/pulsemadridx/"
         target="_blank"
         rel="noopener noreferrer"
       >
