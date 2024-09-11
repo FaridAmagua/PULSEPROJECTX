@@ -93,6 +93,7 @@ export const Home = () => {
         </div>
       </div>
 
+
       <div className="bg-black text-white py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -132,7 +133,7 @@ export const Home = () => {
               <p className="text-gray-400 font-bold">
                 Email: pulseprojectx@gmail.com
               </p>
-              <p className="text-gray-400 font-bold">Teléfono: +34 642408794</p>
+              <p className="text-gray-400 font-bold">Teléfono: +34 604319181</p>
               <div className="flex space-x-4 mt-4">
                 <a
                   href="#facebook"

@@ -60,9 +60,16 @@ export const Egirls = () => {
   };
 
   return (
-    <div className="pt-[4rem] sm:pt-[5rem] md:pt-[4rem] lg:pt-4 bg-black text-white min-h-screen">
+    <div className="bg-black text-white min-h-screen">
+      <div className="mt-[40px] sm:mt-[20px] md:mt-[20px] lg:mt-[20px]">
+        <EventLinearText
+          text1="c"
+          text2="CENAS PANTHERA EN DISPONIBLES"
+          color2="text-white"
+        />
+      </div>
       <div className="flex-grow flex items-top justify-center">
-        <div className="w-full max-w-4xl py-10 px-6">
+        <div className="w-full max-w-4xl my-10 mx-6">
           <h1 className="text-4xl font-bold mb-4 text-[#f11f77] text-center">
             PULSEGIRLS EVENTS
           </h1>
@@ -120,7 +127,7 @@ export const Egirls = () => {
                       href={club.url1}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-1 py-2 rounded-sm flex items-center justify-center flex-grow"
+                      className="bg-blue-800 hover:bg-blue-700 text-white font-bold px-1 py-2 rounded-sm flex items-center justify-center flex-grow"
                     >
                       <span className="text-[13px]">Entradas</span>
                     </a>
@@ -128,7 +135,7 @@ export const Egirls = () => {
                       href={club.url2}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-1 rounded flex items-center justify-center flex-grow"
+                      className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-1 rounded flex items-center justify-center flex-grow"
                     >
                       <span className="text-[13px]">Mensaje</span>
                     </a>
