@@ -40,7 +40,7 @@ const clubsData = [
   {
     title: "Shoko Madrid",
     description:
-      "Obtén entradas gratuitas disponibles los miércoles, viernes y algunos domingos. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos",
+      "Obtén entradas gratuitas disponibles los miércoles, viernes y algunos domingos.Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos",
     image: Imgshokomadrid,
     url1: "https://shokomadrid.com/eventos/",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
@@ -84,7 +84,7 @@ export const Egirls = () => {
           <h2 className="text-2xl font-bold pb-4 text-[#f11f77]">
             ¡Elige tu club y prepárate para una noche inolvidable!
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-4">
             {clubsData.map((club, index) => (
               <div
                 key={index}
@@ -111,24 +111,24 @@ export const Egirls = () => {
                 >
                   <div>
                     <h4 className="text-xl font-semibold mb-2">{club.title}</h4>
-                    <p className="mb-4">{club.description}</p>
+                    <p className="mb-4 text-[14px]">{club.description}</p>
                   </div>
-                  <div className="flex gap-2 mt-auto">
+                  <div className="flex gap-2">
                     <a
                       href={club.url1}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center justify-center flex-grow"
+                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold  px-1  py-2 rounded-sm flex items-center justify-center flex-grow"
                     >
-                      <span className="ml-2">Entradas</span>
+                      <span className=" text-[13px] ">Entradas</span>
                     </a>
                     <a
                       href={club.url2}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded flex items-center justify-center flex-grow"
+                      className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-1 rounded flex items-center justify-center flex-grow"
                     >
-                      <span className="ml-2">Mensaje</span>
+                      <span className="text-[13px]">Mensaje</span>
                     </a>
                   </div>
                 </div>
