@@ -4,7 +4,7 @@ import './events.css';
 export const Events = () => {
   return (
     <a
-      href="https://www.fourvenues.com/es/fitz-madrid/events/fitz-x-jamie-jones-13-09-2024-M69Z"
+      href="https://www.fourvenues.com/es/derene555/events/fitz-x-jhayco-19-09-2024-N4L5"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -19,7 +19,7 @@ export const Events = () => {
         <div className="flex animate-scrollalert">
           {[...Array(8)].map((_, i) => (
             <span key={i} className="text-white text-3xl">
-              CONCIERTO JAIME JONES 13 SEPTIEMRBRE<span>&nbsp;</span>
+              JHAYCO CORTEZ 19 SEPTIEMBRE<span>&nbsp;</span>
             </span>
           ))}
         </div>

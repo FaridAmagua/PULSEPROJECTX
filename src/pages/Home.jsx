@@ -38,7 +38,7 @@ export const Home = () => {
 
         {/* Contenedor principal que ocupa el espacio restante */}
         <div className="flex-grow flex flex-col items-center justify-center text-center">
-          <h1 className="txt__title">PULSEX MADRID</h1>
+          <h1 className="txt__title">PULSE MADRID</h1>
           <div className="flex items-center justify-center mt-4">
             <p className="text-[20px] sm:text-3xl md:text-3xl lg:text-3xl font-bold">
               LAS MEJORES FIESTAS Y EVENTOS

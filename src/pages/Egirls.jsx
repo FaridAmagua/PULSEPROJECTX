@@ -62,16 +62,18 @@ export const Egirls = () => {
   return (
     <div className="bg-black text-white min-h-screen">
       <div className="mt-[40px] sm:mt-[20px] md:mt-[20px] lg:mt-[20px]">
-        <EventLinearText
-          text1="CENA EN PANTHERA DISPONBILE"
-          text2="CENA EN PANTHERA DISPONBILE"
-          color2="text-white"
-        />
+        <a href="https://www.fourvenues.com/es/derene555/events/fitz-x-jhayco-19-09-2024-N4L5/guest-list/xm0zft2ub01o401bnehruc49m2zzp3Cr">
+          <EventLinearText
+            text1="CENA EN PANTHERA DISPONBILE"
+            text2="LISTA DE INVITACION A JHAYCO CORTEZ"
+            color2="text-white"
+          />
+        </a>
       </div>
       <div className="flex-grow flex items-top justify-center">
         <div className="w-full max-w-4xl my-10 mx-6">
           <h1 className="text-4xl font-bold mb-4 text-[#f11f77] text-center">
-            PULSEGIRLS EVENTS
+            PELIGROSAX EVENTS
           </h1>
           <p className="text-lg mb-3">
             ¿Sois un grupo de amigas listo para la próxima aventura? ¡Descubrid
