@@ -63,8 +63,8 @@ export const Egirls = () => {
     <div className="bg-black text-white min-h-screen">
       <div className="mt-[40px] sm:mt-[20px] md:mt-[20px] lg:mt-[20px]">
         <EventLinearText
-          text1="c"
-          text2="CENAS PANTHERA EN DISPONIBLES"
+          text1="CENA EN PANTHERA DISPONBILE"
+          text2="CENA EN PANTHERA DISPONBILE"
           color2="text-white"
         />
       </div>
