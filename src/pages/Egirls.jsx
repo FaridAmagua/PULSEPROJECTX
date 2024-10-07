@@ -13,7 +13,7 @@ const clubsData = [
     description:
       "Nuestro club más exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales.",
     image: Imgfitz,
-    url1: "https://fitzclub.seetickets.com/search/all?BrowseOrder=Date",
+    url1: "https://www.fourvenues.com/es/peligrosax",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
   },
   {
@@ -65,7 +65,7 @@ export const Egirls = () => {
         <a href="https://www.fourvenues.com/es/derene555/events/fitz-x-jhayco-19-09-2024-N4L5/guest-list/xm0zft2ub01o401bnehruc49m2zzp3Cr">
           <EventLinearText
             text1="CENA EN PANTHERA DISPONBILE"
-            text2="LISTA DE INVITACION A JHAYCO CORTEZ"
+            text2="MESA DE INVITACIÓN TODOS LOS MIÉRCOLES"
             color2="text-white"
           />
         </a>

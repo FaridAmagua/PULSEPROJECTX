@@ -134,6 +134,8 @@ export const Home = () => {
                 Email: pulseprojectx@gmail.com
               </p>
               <p className="text-gray-400 font-bold">Teléfono: +34 604319181</p>
+              <p className="text-gray-400 font-bold">Teléfono: +34 642408794</p>
+
               <div className="flex space-x-4 mt-4">
                 <a
                   href="#facebook"

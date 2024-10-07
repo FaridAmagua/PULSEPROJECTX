@@ -1,10 +1,10 @@
 import React from "react";
 
 export const EventLinearText = ({
-  text1 = "PULSEPROJECT", // Texto predeterminado
+  text1 = "PELIGROSAX ", // Texto predeterminado
   text2 = "PROYECTOX", // Texto predeterminado
   color1,
-  color2,
+  color2, 
 }) => {
   return (
     <div className="relative overflow-hidden whitespace-nowrap w-full">

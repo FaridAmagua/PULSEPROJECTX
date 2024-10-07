@@ -17,7 +17,7 @@ const Cardhome = () => {
         "¡El club que está arrasando! Ven a disfrutar de conciertos con artistas internacionales que están en boca de todos.",
       image: Imgfitz, // Usa la variable de la imagen sin llaves adicionales
       code_dressed: "Arreglado",
-      url1: "https://fitzclubmadrid.com/",
+      url1: "https://www.fourvenues.com/es/peligrosax",
       url2: "https://wa.me/message/SG7R44Q336VZO1",
     },
     {
