@@ -12,7 +12,7 @@ const clubsData = [
     title: "Fitz",
     description:
       "Nuestro club más exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales.",
-    image: "Imgfitz" ,
+    image: Imgfitz ,
     url1: "https://www.fourvenues.com/es/peligrosax",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
   },
