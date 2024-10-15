@@ -123,7 +123,7 @@ export const Egirls = () => {
                 >
                   <div>
                     <h4 className="text-xl font-semibold mb-2">{club.title}</h4>
-                    <p className="mb-4 text-[15px]">{club.description}</p>
+                    <p className="mb-4 text-base">{club.description}</p>
                   </div>
                   <div className="flex gap-2">
                     <a
