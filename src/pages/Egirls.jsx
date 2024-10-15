@@ -13,7 +13,7 @@ const clubsData = [
     description:
       "Nuestro club más exclusivo. Contáctanos para consultar sobre la posibilidad de obtener invitaciones para conciertos y mesas especiales.",
     image: Imgfitz ,
-    url1: "https://www.fourvenues.com/es/peligrosax",
+    url1: "https://www.fourvenues.com/es/proyectx",
     url2: "https://wa.me/message/SG7R44Q336VZO1",
   },
   {
@@ -61,21 +61,29 @@ export const Egirls = () => {
 
   return (
     <div className="bg-black text-white min-h-screen">
-      <div className="mt-[40px] sm:mt-[20px] md:mt-[20px] lg:mt-[20px]">
-        <a href="https://www.fourvenues.com/es/derene555/events/fitz-x-jhayco-19-09-2024-N4L5/guest-list/xm0zft2ub01o401bnehruc49m2zzp3Cr">
+      <div className="pt-[80px]">
+        <a href="https://www.fourvenues.com/es/proyectx">
           <EventLinearText
-            text1="CENA EN PANTHERA DISPONBILE"
-            text2="MESA DE INVITACIÓN TODOS LOS MIÉRCOLES"
+            text1="ENTRADAS GRATUITAS EN FITZ CASI TODOS LOS DÍAS"
+            url1="https://www.fourvenues.com/es/proyectx"
+            text2="MESA DE INVITACIÓN TODOS LOS MIÉRCOLES EN OHMY"
+            url2="https://smdgroup.club/es/farid"
             color2="text-white"
+
           />
         </a>
       </div>
       <div className="flex-grow flex items-top justify-center">
         <div className="w-full max-w-4xl my-10 mx-6">
-          <h1 className="text-4xl font-bold mb-4 text-[#f11f77] text-center">
-            PELIGROSAX EVENTS
+          <h1 className="text-5xl font-bold mb-4 text-center">
+            PULSEGIRLS
           </h1>
-          <p className="text-lg mb-3">
+          
+          <h2 className="text-3xl text-center
+           font-bold pb-4 text-[#f11f77]">
+          Descrubre nuestros eventos para chicas
+          </h2>
+          <p className="text-base mb-3 text-center font-bold">
             ¿Sois un grupo de amigas listo para la próxima aventura? ¡Descubrid
             nuestras ventajas exclusivas!&nbsp;
             <span className="animated-text">
@@ -83,14 +91,7 @@ export const Egirls = () => {
               gratuito a los clubs más exclusivos de la ciudad.
             </span>
           </p>
-
-          <p className="mb-3">
-            ¿Queréis disfrutar al máximo de la vida nocturna? ¡Escríbenos y te
-            informamos de todos los eventos disponibles! Restaurantes, bares,
-            fiestas, y mucho más... ¡Todo lo mejor, al alcance de tu mano!
-          </p>
-
-          <h2 className="text-2xl font-bold pb-4 text-[#f11f77]">
+          <h2 className="text-3xl font-bold pb-4 text-[#f11f77] text-center">
             ¡Elige tu club y prepárate para una noche inolvidable!
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-4">
@@ -122,14 +123,14 @@ export const Egirls = () => {
                 >
                   <div>
                     <h4 className="text-xl font-semibold mb-2">{club.title}</h4>
-                    <p className="mb-4 text-[14px]">{club.description}</p>
+                    <p className="mb-4 text-[15px]">{club.description}</p>
                   </div>
                   <div className="flex gap-2">
                     <a
                       href={club.url1}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-blue-800 hover:bg-blue-700 text-white font-bold px-1 py-2 rounded-sm flex items-center justify-center flex-grow"
+                      className="bg-white hover:bg-blue-700 text-black font-bold px-1 py-2 rounded-sm flex items-center justify-center flex-grow"
                     >
                       <span className="text-[13px]">Entradas</span>
                     </a>

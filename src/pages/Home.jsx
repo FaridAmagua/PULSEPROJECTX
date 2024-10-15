@@ -7,7 +7,6 @@ import { Gallery } from "../components/Gallery";
 import { Events } from "../components/Events";
 import Cardhome from "../components/Cardhome.jsx";
 
-
 export const Home = () => {
   // Crear una referencia para la sección de las tarjetas
   const cardsSectionRef = useRef(null);
@@ -57,7 +56,7 @@ export const Home = () => {
                   to="/egirls"
                   className="flex items-center justify-center w-full h-full"
                 >
-                  Eventos PULSEGIRLS
+                  Eventos Gratuitos
                 </Link>
               </button>
 
@@ -93,7 +92,6 @@ export const Home = () => {
         </div>
       </div>
 
-
       <div className="bg-black text-white py-8">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -103,7 +101,7 @@ export const Home = () => {
               <p className="text-gray-400 font-bold">
                 Sumérgete en el universo del ocio nocturno con Pulse Project.
                 Aquí encontrarás la mejor vibra nocturna, eventos emocionantes y
-                una experiencia que hará latir tu corazón al ritmo de la noche.
+                una experiencia que hará latir tu corazón al ritmow de la noche.
               </p>
             </div>
             {/* Enlaces Rápidos */}
@@ -117,7 +115,7 @@ export const Home = () => {
                 </li>
                 <li className="mb-2">
                   <Link to="/egirls" className="hover:underline font-bold">
-                    PULSEGIRLS
+                    PULSEGIRLSA
                   </Link>
                 </li>
                 {/* <li className="mb-2">

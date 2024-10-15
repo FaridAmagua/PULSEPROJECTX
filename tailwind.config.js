@@ -4,6 +4,9 @@ export default {
 
   theme: {
     extend: {
+      fontSize:{
+        base:'1.2rem'
+      },
       colors: {
         // 'regal-primary': 'rgb(248 250 252)',
         "yellow-1": "#F5E401", // Define una variable con el nombre `custom-yellow`
