@@ -3,6 +3,7 @@ import { BrowserRouter,Route,Routes} from 'react-router-dom';
 
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home";
+import FloatingFooter from './components/FloatingFooter';
 // import Contact from "./pages/Contact";
 import Egirls from "./pages/Egirls";
 import Collabs from './pages/Collabs';
@@ -16,6 +17,7 @@ function App() {
     <BrowserRouter basename="/">
       <Scrolltotop /> {/* Este componente debe estar aquí */}
       <Navbar />
+        <FloatingFooter></FloatingFooter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/collabs" element={<Collabs />} />

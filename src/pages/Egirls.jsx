@@ -62,16 +62,13 @@ export const Egirls = () => {
   return (
     <div className="bg-black text-white min-h-screen">
       <div className="pt-[80px]">
-        <a href="https://www.fourvenues.com/es/proyectx">
-          <EventLinearText
-            text1="ENTRADAS GRATUITAS EN FITZ CASI TODOS LOS DÍAS"
-            url1="https://www.fourvenues.com/es/proyectx"
-            text2="MESA DE INVITACIÓN TODOS LOS MIÉRCOLES EN OHMY"
-            url2="https://smdgroup.club/es/farid"
-            color2="text-white"
-
-          />
-        </a>
+      <EventLinearText
+  text1="ENTRADAS GRATUITAS EN FITZ CASI TODOS LOS DÍAS"
+  url1="https://www.fourvenues.com/es/proyectx"
+  text2="MESA DE INVITACIÓN TODOS LOS MIÉRCOLES EN OHMY"
+  url2="https://smdgroup.club/es/farid"
+  color2="text-white"
+/>
       </div>
       <div className="flex-grow flex items-top justify-center">
         <div className="w-full max-w-4xl my-5 mx-6">
@@ -123,7 +120,7 @@ export const Egirls = () => {
                 >
                   <div>
                     <h4 className="text-xl font-semibold mb-2">{club.title}</h4>
-                    <p className="mb-4 text-base">{club.description}</p>
+                    <p className="mb-4 text-base md:text-[16px]">{club.description}</p>
                   </div>
                   <div className="flex gap-2">
                     <a

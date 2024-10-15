@@ -7,7 +7,7 @@ export const Navbar = () => {
   const items = [
     { name: "INICIO", link: "/" },
     { name: "PULSEGIRLS", link: "/egirls" },
-    // { name: "COLABORACIONES", link: "/collabs" },
+    { name: "COLABORACIONES", link: "/collabs" },
     // { name: "SERVICIOS", link: "/service" },
     // { name: "CONTACTO", link: "/contact" },
   ];

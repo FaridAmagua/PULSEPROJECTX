@@ -31,6 +31,7 @@ export const Home = () => {
   return (
     <div className="flex flex-col">
       <div className="min-h-screen flex flex-col text-white">
+
         <div className="mt-20 md:mt-20">
           <EventLinearText />
         </div>
