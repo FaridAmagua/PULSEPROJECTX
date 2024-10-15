@@ -115,7 +115,7 @@ export const Home = () => {
                 </li>
                 <li className="mb-2">
                   <Link to="/egirls" className="hover:underline font-bold">
-                    PULSEGIRLSA
+                    PULSEGIRLS
                   </Link>
                 </li>
                 {/* <li className="mb-2">
