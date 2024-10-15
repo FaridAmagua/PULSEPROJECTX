@@ -74,7 +74,7 @@ export const Egirls = () => {
         </a>
       </div>
       <div className="flex-grow flex items-top justify-center">
-        <div className="w-full max-w-4xl my-10 mx-6">
+        <div className="w-full max-w-4xl my-5 mx-6">
           <h1 className="text-5xl font-bold mb-4 text-center">
             PULSEGIRLS
           </h1>
