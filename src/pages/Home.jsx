@@ -7,6 +7,8 @@ import { Gallery } from "../components/Gallery";
 import { Events } from "../components/Events";
 import Cardhome from "../components/Cardhome.jsx";
 
+import LogoHome from "@/assets/home/LogoHome.png";
+
 export const Home = () => {
   // Crear una referencia para la sección de las tarjetas
   const cardsSectionRef = useRef(null);
@@ -31,14 +33,18 @@ export const Home = () => {
   return (
     <div className="flex flex-col">
       <div className="min-h-screen flex flex-col text-white">
-
         <div className="mt-20 md:mt-20">
           <EventLinearText />
         </div>
 
         {/* Contenedor principal que ocupa el espacio restante */}
         <div className="flex-grow flex flex-col items-center justify-center text-center">
-          <h1 className="txt__title">PULSE MADRID</h1>
+          {/* <h1 className="txt__title">PULSE MADRID</h1> */}
+          <img 
+  src={LogoHome} 
+  alt="Logo Home" 
+  className="h-12 md:h-16 lg:h-19"
+/>
           <div className="flex items-center justify-center mt-4">
             <p className="text-[20px] sm:text-3xl md:text-3xl lg:text-3xl font-bold">
               LAS MEJORES FIESTAS Y EVENTOS
@@ -150,7 +156,7 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="mt-8 text-center text-gray-400 font-bold">
+          <div className="mt-8 text-center text-gray-400 font-bold pb-10">
             &copy; {new Date().getFullYear()} Pulse Project. Todos los derechos
             reservados.
           </div>
