@@ -63,14 +63,14 @@ export const Egirls = () => {
     <div className="bg-black text-white min-h-screen">
       <div className="pt-[80px]">
       <EventLinearText
-  text1="ENTRADAS GRATUITAS EN FITZ CASI TODOS LOS DÍAS"
+  text1="ENTRADAS EN FITZ GRATUITAS"
   url1="https://www.fourvenues.com/es/proyectx"
-  text2="MESA DE INVITACIÓN TODOS LOS MIÉRCOLES EN OHMY"
+  text2=""
   url2="https://smdgroup.club/es/farid"
   color2="text-white"
 />
       </div>
-      <div className="flex-grow flex items-top justify-center">
+      <div className="flex-grow flex items-top justify-center pb-20">
         <div className="w-full max-w-4xl my-5 mx-6">
           <h1 className="text-5xl font-bold mb-4 text-center">
             PULSEGIRLS
@@ -88,7 +88,7 @@ export const Egirls = () => {
               gratuito a los clubs más exclusivos de la ciudad.
             </span>
           </p>
-          <h2 className="text-3xl font-bold pb-4 text-[#f11f77] text-center">
+          <h2 className="text-3xl font-bold pb-4 text-white text-center">
             ¡Elige tu club y prepárate para una noche inolvidable!
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-4 gap-4">
@@ -120,7 +120,7 @@ export const Egirls = () => {
                 >
                   <div>
                     <h4 className="text-xl font-semibold mb-2">{club.title}</h4>
-                    <p className="mb-4 text-base md:text-[16px]">{club.description}</p>
+                    <p className="mb-4 text-base md:text-[14px]">{club.description}</p>
                   </div>
                   <div className="flex gap-2">
                     <a

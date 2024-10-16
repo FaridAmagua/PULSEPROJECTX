@@ -1,15 +1,52 @@
-import React from 'react';
+import React, { useState } from "react";
 import instagramIcon from "@/assets/icons/instagram.png";
+import whatsAppIcon from "@/assets/icons/whatsapp.png";
+import EmailIcon from "@/assets/icons/email.png";
+import ArrowUp from "@/assets/icons/arrow.png";
 
 const FloatingFooter = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
-    <div className="fixed bottom-0 left-0 w-full bg- shadow-md p-4 flex justify-center space-x-4 z-50">
-      <a href="https://wa.me/tuNumero" target="_blank" rel="noopener noreferrer">
-        <img                 src={instagramIcon} alt="WhatsApp" className="h-8 w-8 text-green-500 hover:text-green-600" />
-      </a>
-      {/* <a href="https://instagram.com/tuUsuario" target="_blank" rel="noopener noreferrer">
-        <img src={instagramIcon} alt="Instagram" className="h-8 w-8 hover:text-pink-600" />
-      </a> */}
+    <div className="fixed bg-black border rounded-tl-lg border-black bottom-0 right-0 shadow-md p-4 z-50">
+      {isExpanded && (
+        <div className="flex flex-col items-end space-y-4 mb-4">
+          <a
+            href="https://wa.me/34604319181"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={whatsAppIcon} alt="WhatsApp" className="h-10 w-10" />
+          </a>
+          <a
+            href="https://instagram.com/farid_rbn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={instagramIcon} alt="Instagram" className="h-10 w-10" />
+          </a>
+          <a
+            href="mailto:faridamagua@live.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={EmailIcon} alt="Email" className="h-10 w-10" />
+          </a>
+        </div>
+      )}
+      <button onClick={toggleExpand} className="focus:outline-none">
+        <img
+          src={ArrowUp}
+          alt="Expand"
+          className={`h-10 w-10 transition-transform ${
+            isExpanded ? "rotate-180" : ""
+          }`}
+        />
+      </button>
     </div>
   );
 };
