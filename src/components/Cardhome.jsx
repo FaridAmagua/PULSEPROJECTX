@@ -43,7 +43,7 @@ const Cardhome = () => {
       description: t('Cards.descriptionMon'),
       image: Imgmon,
       code_dressed: "Arreglado",
-      url1: "https://www.fourvenues.com/es/roberson-farid-amagua-lema",
+      url1: "https://www.fourvenues.com/es/proyectx",
       url2: "https://wa.me/message/SG7R44Q336VZO1",
     },
     {
