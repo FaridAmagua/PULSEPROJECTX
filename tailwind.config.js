@@ -1,20 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
-
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
+    // Rutas para diferentes idiomas si tienes contenido separado por idiomas
+    "./locales/**/*.json" // Incluye tus archivos de traducción si los estás usando
+  ],
   theme: {
     extend: {
-      fontSize:{
-        base:'1.2rem'
+      fontSize: {
+        base: '1.2rem', // Manteniendo la definición existente de fontSize
       },
       colors: {
-        // 'regal-primary': 'rgb(248 250 252)',
-        "yellow-1": "#F5E401", // Define una variable con el nombre `custom-yellow`
+        "yellow-1": "#F5E401", // Color personalizado existente
       },
       animation: {
-        scroll: "scroll 20s linear infinite",
-        "scroll-back": "scrollBack 15s linear infinite",
-        scrollalert:"scroll 12s linear infinite",
+        scroll: "scroll 20s linear infinite", // Definición existente para scroll
+        "scroll-back": "scrollBack 15s linear infinite", // Definición para scrollBack
+        scrollalert: "scroll 12s linear infinite", // Definición para scrollalert
       },
       keyframes: {
         scroll: {
@@ -28,6 +31,7 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [
+    require("@tailwindcss/aspect-ratio") // Manteniendo el plugin aspect-ratio
+  ],
 };
-

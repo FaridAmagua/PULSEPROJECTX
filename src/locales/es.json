@@ -1,0 +1,17 @@
+{
+  "Inicio": "Las mejores eventos y fiestas",
+  "buttons": {
+    "recommendedClubs": "Clubs recomendados",
+    "freeEvents": "Eventos gratuitos"
+  },
+  "sections": {
+    "discoverParties": "Descubre nuestra fiestas"
+  },
+  "footer": {
+    "description": "Sumérgete en el universo de la vida nocturna con Pulse Project. Aquí encontrarás el mejor ambiente nocturno, emocionantes eventos y una experiencia que hará latir tu corazón al ritmo de la noche.",
+    "quickLinks": "ENLACES RÁPIDOS",
+    "home": "INICIO",
+    "pulseGirls": "PULSEGIRLS",
+    "contact": "CONTACTO"
+  }
+}

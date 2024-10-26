@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+import { useTranslation } from 'react-i18next'; // Importa el hook
 // import "./card.css";
 //imagenes
 import Imgfitz from "@/assets/card-fitz.gif";
@@ -9,55 +10,50 @@ import Imgshokomadrid from "@/assets/card-shoko-madrid.gif";
 import Imgmon from "@/assets/card-mon.gif";
 
 const Cardhome = () => {
+  const { t } = useTranslation(); // Usa el hook para obtener la función de traducción
+
   // Definir el diccionario de datos
   const cardData = [
     {
-      title: "FITZ MADRID",
-      description:
-        "¡El club que está arrasando! Ven a disfrutar de conciertos con artistas internacionales que están en boca de todos.",
-      image: Imgfitz, // Usa la variable de la imagen sin llaves adicionales
+      title: t('Cards.titleFitz'), // Usa la función t para obtener la traducción
+      description: t('Cards.descriptionFitz'),
+      image: Imgfitz,
       code_dressed: "Arreglado",
-      url1: "https://www.fourvenues.com/es/peligrosax",
+      url1: "https://www.fourvenues.com/es/proyectx",
       url2: "https://wa.me/message/SG7R44Q336VZO1",
     },
     {
-      title: "OHMYCLUB",
-      description:
-        "Explora la vida nocturna de Madrid con un toque de elegancia. ¡Prepárate para fiestas y conciertos que te harán brillar!",
+      title: t('Cards.titleOhmyclub'),
+      description: t('Cards.descriptionOhmyclub'),
       image: Imgohmyclub,
       code_dressed: "Elegante",
       url1: "https://smdgroup.club/es/farid",
       url2: "https://wa.me/message/SG7R44Q336VZO1",
     },
     {
-      title: "SHOKO",
-      description:
-        "Para todos, con el mejor ambiente y actuaciones de los artistas más famosos del momento. Únete a la fiesta y vive la experiencia única.",
+      title: t('Cards.titleShoko'),
+      description: t('Cards.descriptionShoko'),
       image: Imgshokomadrid,
       code_dressed: "Casual",
       url1: "https://shokomadrid.com/eventos/",
       url2: "https://wa.me/message/SG7R44Q336VZO1",
     },
     {
-      title: "MON",
-      description:
-        "La mejor música del momento y un ambiente universitario se fusionan para una fiesta inolvidable. ¡Vive la noche al máximo con nosotros!",
+      title: t('Cards.titleMon'),
+      description: t('Cards.descriptionMon'),
       image: Imgmon,
       code_dressed: "Arreglado",
       url1: "https://www.fourvenues.com/es/roberson-farid-amagua-lema",
       url2: "https://wa.me/message/SG7R44Q336VZO1",
     },
     {
-      title: "NAZCA",
-      description:
-        "El club para los jóvenes que buscan disfrutar de la mejor música latina y electrónica en un ambiente lleno de energía.",
+      title: t('Cards.titleNazca'),
+      description: t('Cards.descriptionNazca'),
       image: Imgnazca,
       code_dressed: "Arreglado",
       url1: "https://xceed.me/es/madrid/club/nazca-events-club",
       url2: "https://wa.me/message/SG7R44Q336VZO1",
     },
-
-    // Añade más objetos de tarjeta si lo necesitas
   ];
 
   return (
@@ -102,12 +98,12 @@ const Cardhome = () => {
               <div className="flex items-center space-x-4">
                 <button className="bg-black border text-white px-4 py-2 rounded hover:bg-white hover:text-black focus:outline-none focus:ring-2">
                   <a href={card.url1} target="_blank" rel="noopener noreferrer">
-                    ENTRADAS
+                  {t('Cards.btn1')}
                   </a>
                 </button>
                 <button className="bg-white border text-black px-4 py-2 rounded hover:bg-black hover:text-white focus:outline-none focus:ring-2">
                   <a href={card.url2} target="_blank" rel="noopener noreferrer">
-                    RESERVA MESA
+                  {t('Cards.btn2')}
                   </a>
                 </button>
               </div>
@@ -118,4 +114,5 @@ const Cardhome = () => {
     </div>
   );
 };
+
 export default Cardhome;
