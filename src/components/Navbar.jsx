@@ -2,17 +2,19 @@ import "./navbar.css";
 import { useState, useRef } from "react";
 import Hamburger from "hamburger-react";
 import { NavLink } from "react-router-dom";
-import { useTranslation } from "react-i18next"; // Importar hook de traducción
-import englishFlag from '../assets/flags/ingles.png'; // Ruta a la bandera inglesa
-import spanishFlag from '../assets/flags/espana.png'; // Ruta a la bandera española
+import { useTranslation } from "react-i18next";
+import englishFlag from '../assets/flags/ingles.png';
+import spanishFlag from '../assets/flags/espana.png';
 
 export const Navbar = () => {
+  const { i18n } = useTranslation();
+
+  // Actualizado: ahora solo INICIO y ONLYGIRLSX
   const items = [
     { name: "INICIO", link: "/" },
-    { name: "PULSEGIRLS", link: "/egirls" },
+    { name: "ONLYGIRLSX", link: "/onlygirlsx" },
   ];
 
-  const { i18n } = useTranslation();
   const [toggleNavbar, setToggleNavbar] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const collapseRef = useRef(null);
@@ -25,20 +27,22 @@ export const Navbar = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)
       .then(() => {
-        console.log(`Idioma cambiado a: ${lng}`); // Confirma el idioma en la consola
+        console.log(`Idioma cambiado a: ${lng}`);
       })
       .catch((error) => {
-        console.error("Error al cambiar el idioma:", error); // Si falla, muestra el error en consola
+        console.error("Error al cambiar el idioma:", error);
       });
-    setDropdownOpen(false); // Cerrar el dropdown después de cambiar el idioma
+    setDropdownOpen(false);
   };
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black text-white">
       <div className="flex justify-between items-center px-6 py-4">
-      <NavLink to="/" className="text-1xl">
-      PULSEPROJECT
-</NavLink>        {/* Desktop device */}
+        <NavLink to="/" className="text-1xl">
+          PROYECTOX
+        </NavLink>
+
+        {/* Desktop */}
         <ul className="hidden md:flex gap-x-8 text-400">
           {items.map((item) => (
             <li key={item.link}>
@@ -56,13 +60,18 @@ export const Navbar = () => {
               </NavLink>
             </li>
           ))}
-          {/* Selector de idioma */}
+
+          {/* Selector idioma */}
           <li className="relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
               className="flex items-center focus:outline-none"
             >
-              <img src={i18n.language === 'es' ? spanishFlag : englishFlag} alt="Current Language" className="w-6 h-6" />
+              <img
+                src={i18n.language === 'es' ? spanishFlag : englishFlag}
+                alt="Current Language"
+                className="w-6 h-6"
+              />
             </button>
             {dropdownOpen && (
               <div className="absolute right-0 mt-2 bg-black text-white border border-gray-700 rounded shadow-lg w-16 flex flex-col items-center">
@@ -82,8 +91,8 @@ export const Navbar = () => {
             )}
           </li>
         </ul>
-        
-        {/* Mobile version */}
+
+        {/* Mobile */}
         <div className="md:hidden">
           <Hamburger
             color="rgb(156 163 175)"
@@ -93,6 +102,8 @@ export const Navbar = () => {
           />
         </div>
       </div>
+
+      {/* Mobile menu */}
       <div
         className={
           toggleNavbar
@@ -112,7 +123,8 @@ export const Navbar = () => {
               {item.name}
             </NavLink>
           ))}
-          {/* Selector de idioma en versión móvil */}
+
+          {/* Idioma en mobile */}
           <div className="flex flex-col items-center mt-4">
             <button onClick={() => changeLanguage('en')} className="flex items-center mb-2">
               <img src={englishFlag} alt="English" className="w-6 h-6" />

@@ -16,14 +16,14 @@ const FloatingFooter = () => {
       {isExpanded && (
         <div className="flex flex-col items-end space-y-4 mb-4">
           <a
-            href="https://wa.me/34604319181"
+            href="https://wa.me/34601518207"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={whatsAppIcon} alt="WhatsApp" className="h-10 w-10" />
           </a>
           <a
-            href="https://instagram.com/farid_rbn"
+            href="https://www.instagram.com/proyectoxmadrid/"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -1,10 +1,10 @@
-import React from "react";
+// import React from "react";
 import './events.css';
 
 export const Events = () => {
   return (
     <a
-      href="https://www.fourvenues.com/es/proyectx"
+      href="https://www.fourvenues.com/es/proyectx/events/jc-reyes-x-fitz-07-09-20251-JPA4"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -19,7 +19,7 @@ export const Events = () => {
         <div className="flex animate-scrollalert">
           {[...Array(8)].map((_, i) => (
             <span key={i} className="text-white text-3xl">
-              FITZ X JC REYES 17 OCT<span>&nbsp;</span>
+              FITZ X JC REYES 07 SEPT<span>&nbsp;</span>
             </span>
           ))}
         </div>

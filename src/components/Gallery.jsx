@@ -5,20 +5,29 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay } from 'swiper/modules';
-// Usa el alias o la ruta relativa correcta
-// importa otras imágenes si es necesario
+
 import Imginstagram from "@/assets/instagram-home.png";
-//card
-import Imgcard1 from "@/assets/card1.jpg";
-import Imgcard2 from "@/assets/card2.jpg";
-import Imgcard3 from "@/assets/card3.jpg";
-import Imgcard4 from "@/assets/card4.jpg";
-import Imgcard5 from "@/assets/card5.jpg";
-import Imgcard6 from "@/assets/card6.jpg";
-import Imgcard7 from "@/assets/card7.jpg";
-import Imgcard8 from "@/assets/card8.jpg";
 
+// Cargamos TODAS las imágenes de /src/assets/gallery automáticamente.
+// Tipos soportados: jpg, jpeg, png, gif, webp
+const imagesEntries = Object.entries(
+  import.meta.glob('../assets/gallery/*.{jpg,jpeg,png,gif,webp}', {
+    eager: true,
+    as: 'url',
+  })
+);
 
+// Orden por nombre de archivo (útil si nombras 1,2,3...)
+// También generamos un alt accesible desde el nombre del archivo.
+const images = imagesEntries
+  .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
+  .map(([path, url]) => ({
+    url,
+    alt: path
+      .split('/').pop()            // nombre.ext
+      .replace(/\.[^.]+$/, '')     // nombre
+      .replace(/[-_]/g, ' '),      // guiones -> espacios
+  }));
 
 export const Gallery = () => {
   return (
@@ -50,64 +59,27 @@ export const Gallery = () => {
       <div className="container__swiper">
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={0} // Ajusta el espacio entre las diapositivas
-          slidesPerView={6} // Número de diapositivas visibles a la vez
+          spaceBetween={0}
+          slidesPerView={6}
           pagination={{ clickable: true }}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false,
           }}
           breakpoints={{
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 0,
-            },
-            430: {
-              slidesPerView: 1,
-              spaceBetween: 0,
-            },
-            640: {
-              slidesPerView: 4,
-              spaceBetween: 0,
-            },
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 0,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 0,
-            },
-            2560: {
-              slidesPerView: 6,
-              spaceBetween: 0,
-            },
+            320:  { slidesPerView: 1, spaceBetween: 0 },
+            430:  { slidesPerView: 1, spaceBetween: 0 },
+            640:  { slidesPerView: 4, spaceBetween: 0 },
+            768:  { slidesPerView: 4, spaceBetween: 0 },
+            1024: { slidesPerView: 4, spaceBetween: 0 },
+            2560: { slidesPerView: 6, spaceBetween: 0 },
           }}
         >
-          <SwiperSlide>
-            <img src={Imgcard1} className="img-fluid rounded-top" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Imgcard2} className="img-fluid rounded-top" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Imgcard3} className="img-fluid rounded-top" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Imgcard4} className="img-fluid rounded-top" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Imgcard5} className="img-fluid rounded-top" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Imgcard6} className="img-fluid rounded-top" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Imgcard7} className="img-fluid rounded-top" alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Imgcard8} className="img-fluid rounded-top" alt="" />
-          </SwiperSlide>
+          {images.map(({ url, alt }, idx) => (
+            <SwiperSlide key={idx}>
+              <img src={url} className="img-fluid rounded-top" alt={alt} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

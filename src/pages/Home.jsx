@@ -77,7 +77,7 @@ export const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h2 className="text-2xl font-bold mb-2">PULSE PROJECT</h2>
+              <h2 className="text-2xl font-bold mb-2">DECOTEA</h2>
               <p className="text-gray-400 font-bold">
                 {t('footer.description')} {/* Obtiene la traducción para 'footer.description' */}
               </p>
@@ -105,7 +105,7 @@ export const Home = () => {
             </div>
           </div>
           <div className="mt-8 text-center text-gray-400 font-bold pb-10">
-            &copy; {new Date().getFullYear()} Pulse Project. Todos los derechos reservados.
+            &copy; {new Date().getFullYear()} DECOTEA. Todos los derechos reservados.
           </div>
         </div>
       </div>

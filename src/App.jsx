@@ -1,14 +1,15 @@
-import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import FloatingFooter from './components/FloatingFooter';
+import FloatingFooter from "./components/FloatingFooter";
 import Egirls from "./pages/Egirls";
-import Collabs from './pages/Collabs';
-import Service from './pages/Service';
-import Scrolltotop from './components/Scrolltotop';
-import { I18nextProvider } from 'react-i18next';
-import i18n from './configuration/i18n'; // Asegúrate de que esta ruta sea correcta
+import OnlyGirlsX from "./pages/OnlyGirls";   // <- corregido
+import Collabs from "./pages/Collabs";
+import Service from "./pages/Service";
+import Scrolltotop from "./components/Scrolltotop";
+import { I18nextProvider } from "react-i18next";
+import i18n from "./configuration/i18n";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/collabs" element={<Collabs />} />
           <Route path="/egirls" element={<Egirls />} />
           <Route path="/service" element={<Service />} />
+  <Route path="/onlygirlsx" element={<OnlyGirlsX />} />  {/* ← con JSX */}
         </Routes>
       </BrowserRouter>
     </I18nextProvider>
